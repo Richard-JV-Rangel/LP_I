@@ -44,5 +44,5 @@
 ---
 
 <h2>2. Arquivos do Projeto</h2>
-<p>Os arquivos Java com a implementação das modelagens serão adicionados em um <a href="[LINK_PARA_O_REPOSITORIO_MODELAGEM_JAVA]">repositório separado</a>, utilize o link ou vá em "modelagem_Java"</p>
-<p>Lá terá todos os modelos em classes separadas e terá um unificado com todos para rodar todos os metódos chamado *ProjetoModelagem*</p>
+<p>Os arquivos Java com a implementação das modelagens serão adicionados em um <a href="https://github.com/Richard-JV-Rangel/LP_I/tree/main/modelagem_Java">repositório separado</a>, utilize o link ou vá em "modelagem_Java"</p>
+<p>Lá terá todos os modelos em classes separadas e terá um unificado com todos para rodar todos os metódos chamado <b>ProjetoModelagem</b></p>
