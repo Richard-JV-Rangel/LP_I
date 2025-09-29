@@ -1,0 +1,49 @@
+.root {
+  -fx-background-color: #121212;
+}
+.tab-pane .tab-header-area .tab-header-background {
+  -fx-background-color: #1f1b24;
+}
+.tab-pane .tab {
+  -fx-background-color: #1f1b24;
+}
+.tab-pane .tab:selected {
+  -fx-background-color: #007bff;
+}
+.tab .tab-label {
+  -fx-text-fill: #ffffff;
+  -fx-font-weight: bold;
+}
+.title-label {
+  -fx-font-size: 22px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #ffffff;
+}
+.section-title-label {
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #00afff;
+}
+.button {
+  -fx-background-color: #007bff;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-background-radius: 5;
+  -fx-pref-width: 250px;
+}
+.button:hover {
+  -fx-background-color: #0056b3;
+}
+.text-area {
+  -fx-control-inner-background: #2c2c2c;
+  -fx-font-family: "Consolas";
+  -fx-font-size: 14px;
+  -fx-text-fill: #e0e0e0;
+  -fx-border-color: #007bff;
+}
+.section-pane {
+  -fx-background-color: #1e1e1e;
+  -fx-border-color: #333333;
+  -fx-border-radius: 8;
+  -fx-padding: 15;
+}

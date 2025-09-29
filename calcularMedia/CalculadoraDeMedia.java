@@ -2,17 +2,10 @@ public class CalculadoraDeMedia {
 
     public static void main(String[] args) {
         double[][] cenarios = {
-                // P1, E1, E2, API, SUB, X
                 { 0, 8, 7, 9, 0, 0 },
-                { 7, 7, 7, 7, 0, 0 },
                 { 10, 10, 10, 10, 0, 0 },
                 { 8, 6, 7, 8, 0, 1 },
-                { 5, 6, 4, 8, 6, 0 },
-                { 5, 5, 5, 10, 0, 0 },
-                { 9, 4, 6, 8, 0, 0 },
-                { 2, 8, 6, 8, 7, 0 },
                 { 5, 5, 5, 5, 0, 0 },
-                { 9, 9, 9, 10, 0, 1 }
         };
 
         System.out.println("Cálculo da Média para 10 Cenários:\n");
