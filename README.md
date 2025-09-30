@@ -46,3 +46,9 @@
 <h2>2. Arquivos do Projeto</h2>
 <p>Os arquivos Java com a implementação das modelagens serão adicionados em um <a href="https://github.com/Richard-JV-Rangel/LP_I/tree/main/modelagem_Java">repositório separado</a>, utilize o link ou vá em "modelagem_Java"</p>
 <p>Lá terá todos os modelos em classes separadas e terá um unificado com todos para rodar todos os metódos chamado <b>ProjetoModelagem</b></p>
+
+---
+
+<h2>3. Fazer uma tela e guardar os metodos Java em um CSV</h2>
+<p>Logo após a conclusão das atividades anteriores foi solicitado a junção (já antes feita), uma tela de interação e guardar as informações em um arquivo CSV, pois isso utilizando o Maven foi feito um sistema que engloba todos os métodos de cada classe separados por suas classes e das inspirações (video, musica, imagem) podendo ser visto e testado em <a href="https://github.com/Richard-JV-Rangel/LP_I/tree/main/E1">E1</a>.</p>
+<p>Lá porta todo o código e exemplo prático já realizado, com o CSV presente na pasta <b>Data</b>.</p>
