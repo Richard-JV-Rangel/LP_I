@@ -3,6 +3,7 @@ package com.projeto.controler;
 import com.projeto.model.Pianista;
 import com.projeto.model.Piano;
 import com.projeto.model.Video;
+import com.projeto.service.CsvService;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 
@@ -10,24 +11,91 @@ public class VideoController {
     @FXML
     private TextArea outputArea;
 
+    private final CsvService csvService = new CsvService();
+    private final String nomeArquivoCsv = "videos.csv";
+    private final String[] cabecalhoCsv = { "Classe", "Metodo", "Resultado" };
+
     private Pianista pianista = new Pianista();
     private Piano piano = new Piano();
     private Video video = new Video();
 
     @FXML
     public void initialize() {
-        outputArea.setText("Painel 'Vídeo' inicializado.\n\n");
+        outputArea.setText("Painel 'Vídeo' inicializado. Ações serão salvas em " + nomeArquivoCsv + "\n\n");
     }
 
-    @FXML void handleTocarMusica() { outputArea.appendText("▶ Pianista: " + pianista.tocarMusica() + "\n"); }
-    @FXML void handleImprovisar() { outputArea.appendText("▶ Pianista: " + pianista.improvisar() + "\n"); }
-    @FXML void handleVirarDeCostas() { outputArea.appendText("▶ Pianista: " + pianista.virarDeCostas() + "\n"); }
+    //Classe Pianista
+    @FXML
+    void handleTocarMusica() {
+        String resultado = pianista.tocarMusica();
+        outputArea.appendText("▶ Pianista: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "Pianista", "tocarMusica()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
+    }
 
-    @FXML void handleEmitirSom() { outputArea.appendText("▶ Piano: " + piano.emitirSom() + "\n"); }
-    @FXML void handleAbrirTampa() { outputArea.appendText("▶ Piano: " + piano.abrirTampa() + "\n"); }
-    @FXML void handleSuportarPeso() { outputArea.appendText("▶ Piano: " + piano.suportarPeso() + "\n"); }
+    @FXML
+    void handleImprovisar() {
+        String resultado = pianista.improvisar();
+        outputArea.appendText("▶ Pianista: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "Pianista", "improvisar()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
+    }
 
-    @FXML void handleReproduzir() { outputArea.appendText("▶ Vídeo: " + video.reproduzir() + "\n"); }
-    @FXML void handlePausar() { outputArea.appendText("▶ Vídeo: " + video.pausar() + "\n"); }
-    @FXML void handleAvancar() { outputArea.appendText("▶ Vídeo: " + video.avancar() + "\n"); }
+    @FXML
+    void handleVirarDeCostas() {
+        String resultado = pianista.virarDeCostas();
+        outputArea.appendText("▶ Pianista: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "Pianista", "virarDeCostas()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
+    }
+
+    //Classe Piano
+    @FXML
+    void handleEmitirSom() {
+        String resultado = piano.emitirSom();
+        outputArea.appendText("▶ Piano: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "Piano", "emitirSom()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
+    }
+
+    @FXML
+    void handleAbrirTampa() {
+        String resultado = piano.abrirTampa();
+        outputArea.appendText("▶ Piano: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "Piano", "abrirTampa()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
+    }
+
+    @FXML
+    void handleSuportarPeso() {
+        String resultado = piano.suportarPeso();
+        outputArea.appendText("▶ Piano: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "Piano", "suportarPeso()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
+    }
+
+    //Classe Video
+    @FXML
+    void handleReproduzir() {
+        String resultado = video.reproduzir();
+        outputArea.appendText("▶ Vídeo: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "Video", "reproduzir()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
+    }
+
+    @FXML
+    void handlePausar() {
+        String resultado = video.pausar();
+        outputArea.appendText("▶ Vídeo: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "Video", "pausar()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
+    }
+
+    @FXML
+    void handleAvancar() {
+        String resultado = video.avancar();
+        outputArea.appendText("▶ Vídeo: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "Video", "avancar()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
+    }
 }

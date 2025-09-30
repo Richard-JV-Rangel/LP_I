@@ -1,0 +1,4 @@
+Timestamp,Classe,Metodo,Resultado
+2025-09-30 13:51:57,Jornal,flutuar(),O jornal 'A Notícia' está flutuando.
+2025-09-30 13:51:57,Cidade,serTuristica(),A cidade de Veneza é um local turístico.
+2025-09-30 13:51:59,CorpoDeAgua,movimentar(),O Rio está se movimentando.

@@ -3,6 +3,7 @@ package com.projeto.controler;
 import com.projeto.model.Crime;
 import com.projeto.model.InstrumentoMusical;
 import com.projeto.model.PessoaMusica;
+import com.projeto.service.CsvService;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 
@@ -10,27 +11,40 @@ public class MusicaController {
     @FXML
     private TextArea outputArea;
 
+    private final CsvService csvService = new CsvService();
+    private final String nomeArquivoCsv = "musicas.csv";
+    private final String[] cabecalhoCsv = { "Classe", "Metodo", "Resultado" };
+
     private PessoaMusica pessoaMusica = new PessoaMusica();
     private Crime crime = new Crime();
     private InstrumentoMusical instrumentoMusical = new InstrumentoMusical();
 
     @FXML
     public void initialize() {
-        outputArea.setText("Painel 'Música' inicializado.\n\n");
+        outputArea.setText("Painel 'Música' inicializado. Ações serão salvas em " + nomeArquivoCsv + "\n\n");
     }
 
     @FXML
     void handleCantar() {
-        outputArea.appendText("▶ Pessoa: " + pessoaMusica.cantar() + "\n");
+        String resultado = pessoaMusica.cantar();
+        outputArea.appendText("▶ Pessoa: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "PessoaMusica", "cantar()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
     }
 
     @FXML
     void handleCometerCrime() {
-        outputArea.appendText("▶ Crime: " + crime.cometer() + "\n");
+        String resultado = crime.cometer();
+        outputArea.appendText("▶ Crime: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "Crime", "cometer()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
     }
 
     @FXML
     void handleTocarInstrumento() {
-        outputArea.appendText("▶ Instrumento: " + instrumentoMusical.tocar() + "\n");
+        String resultado = instrumentoMusical.tocar();
+        outputArea.appendText("▶ Instrumento: " + resultado + "\n");
+        csvService.salvarRegistro(nomeArquivoCsv, cabecalhoCsv, "InstrumentoMusical", "tocar()", resultado);
+        outputArea.appendText("   [CSV] Registro salvo.\n");
     }
 }
