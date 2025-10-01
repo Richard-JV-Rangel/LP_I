@@ -1,10 +1,2 @@
 Timestamp,Classe,Metodo,Resultado
-2025-09-30 13:52:01,Pianista,tocarMusica(),Ludovico está tocando uma música com habilidade incrível.
-2025-09-30 13:52:02,Pianista,improvisar(),Ludovico está improvisando.
-2025-09-30 13:52:03,Pianista,virarDeCostas(),Ludovico virou de costas.
-2025-09-30 13:52:04,Piano,emitirSom(),O piano está emitindo som.
-2025-09-30 13:52:05,Piano,abrirTampa(),A tampa do piano foi aberta.
-2025-09-30 13:52:05,Piano,suportarPeso(),O piano suporta um certo peso.
-2025-09-30 13:52:06,Video,reproduzir(),O vídeo 'Nuvole Bianche' está sendo reproduzido.
-2025-09-30 13:52:07,Video,pausar(),O vídeo 'Nuvole Bianche' foi pausado.
-2025-09-30 13:52:08,Video,avancar(),O vídeo 'Nuvole Bianche' está avançando.
+2025-09-30 21:25:40,Pianista,tocarMusica(),Ludovico está tocando uma música com habilidade incrível.
