@@ -52,3 +52,22 @@
 <h2>3. Fazer uma tela e guardar os metodos Java em um CSV</h2>
 <p>Logo após a conclusão das atividades anteriores foi solicitado a junção (já antes feita), uma tela de interação e guardar as informações em um arquivo CSV, pois isso utilizando o Maven foi feito um sistema que engloba todos os métodos de cada classe separados por suas classes e das inspirações (video, musica, imagem) podendo ser visto e testado em <a href="https://github.com/Richard-JV-Rangel/LP_I/tree/main/E1">E1</a>.</p>
 <p>Lá porta todo o código e exemplo prático já realizado, com o CSV presente na pasta <b>Data</b>.</p>
+
+---
+
+<h2>4. Evolução: Banco de Dados e Interface Estilizada (E2)</h2>
+<p>Dando continuidade ao aprendizado, a atividade <b>E2</b> representa um salto técnico significativo. As classes modeladas anteriormente foram integradas a um Banco de Dados Relacional (MySQL) e ganharam uma interface gráfica profissional.</p>
+
+<h3>Principais Mudanças</h3>
+<ul>
+    <li><b>Persistência Real:</b> Migração do armazenamento de arquivos CSV para <b>MySQL</b>, permitindo manipulação robusta de dados (SQL).</li>
+    <li><b>Interface Moderna:</b> Criação de uma GUI utilizando <b>JavaFX</b> com aplicação de folhas de estilo (CSS) para um tema <i>Dark Modern</i>, focado na usabilidade e leitura.</li>
+    <li><b>Arquitetura MVC & DAO:</b> O código foi reestruturado para separar a lógica de negócio, a interface visual e o acesso ao banco de dados, seguindo boas práticas de mercado.</li>
+</ul>
+
+<div align="center">
+    <p>O código fonte completo, instruções de instalação e o script SQL podem ser acessados na pasta do projeto:</p>
+    <a href="https://github.com/Richard-JV-Rangel/LP_I/tree/main/E2">
+        <img src="https://img.shields.io/badge/Acessar_Projeto-E2-blue?style=for-the-badge&logo=github" alt="Link para E2">
+    </a>
+</div>
