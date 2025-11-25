@@ -1,0 +1,155 @@
+/* === TEMA CLEAN MODERN DARK === */
+
+/* Fundo Geral - Um cinza fosco mais agradável (estilo VS Code) */
+.root {
+    -fx-background-color: #1e1e1e;
+    -fx-font-family: 'Segoe UI', 'Helvetica', sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* --- TABELA (O foco da correção) --- */
+.table-view {
+    -fx-background-color: transparent; /* Remove borda branca padrão */
+    -fx-base: #1e1e1e; /* Define a base escura para cálculos do JavaFX */
+    -fx-control-inner-background: #1e1e1e; /* Fundo interno */
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+/* Cabeçalho da Tabela */
+.table-view .column-header-background {
+    -fx-background-color: #252526;
+    -fx-border-color: transparent transparent #3e3e42 transparent; /* Linha sutil embaixo */
+    -fx-border-width: 1px;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-size: 35px; /* Altura do cabeçalho */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #9cdcfe; /* Azul claro para títulos (destaque clean) */
+    -fx-font-weight: bold;
+}
+
+/* Células e Linhas */
+.table-row-cell {
+    -fx-background-color: #1e1e1e; /* Cor padrão da linha */
+    -fx-border-color: transparent transparent #2d2d2d transparent; /* Separador sutil */
+}
+
+/* Linhas ímpares um pouco mais claras para dar leitura (Zebra effect suave) */
+.table-row-cell:odd {
+    -fx-background-color: #262626;
+}
+
+/* CORREÇÃO DO TEXTO: Força a cor branca nas células */
+.table-cell {
+    -fx-text-fill: #e0e0e0;
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 0 0 0 10; /* Espaçamento para o texto não colar na borda */
+}
+
+/* Quando seleciona uma linha */
+.table-view:focused .table-row-cell:selected,
+.table-row-cell:selected {
+    -fx-background-color: #094771; /* Azul escuro de seleção */
+    -fx-background-insets: 0;
+}
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: white; /* Texto branco puro na seleção */
+}
+
+/* Placeholder (quando a tabela está vazia) */
+.table-view .placeholder .label {
+    -fx-text-fill: #666666;
+}
+
+
+/* --- INPUTS (Campos de Texto) --- */
+.text-field {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #f0f0f0;
+    -fx-prompt-text-fill: #858585;
+    -fx-border-color: #3c3c3c;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 8;
+}
+
+.text-field:focused {
+    -fx-border-color: #007acc; /* Borda azul quando clica */
+    -fx-background-color: #303030;
+}
+
+
+/* --- BOTÕES (Design Flat e Clean) --- */
+.button {
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4;
+    -fx-background-insets: 0;
+    -fx-padding: 8 20;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+}
+
+/* Cores dos Botões */
+.btn-salvar {
+    -fx-background-color: #2ea043; /* Verde GitHub */
+}
+.btn-salvar:hover { -fx-background-color: #3fb950; }
+
+.btn-editar {
+    -fx-background-color: #1f6feb; /* Azul GitHub */
+}
+.btn-editar:hover { -fx-background-color: #388bfd; }
+
+.btn-excluir {
+    -fx-background-color: #d73a49; /* Vermelho suave */
+}
+.btn-excluir:hover { -fx-background-color: #da3633; }
+
+.btn-acao {
+    -fx-background-color: #8957e5; /* Roxo */
+}
+.btn-acao:hover { -fx-background-color: #9e6aeb; }
+
+.btn-limpar {
+    -fx-background-color: #484f58; /* Cinza */
+}
+.btn-limpar:hover { -fx-background-color: #6e7681; }
+
+
+/* --- ABAS E TÍTULOS --- */
+.titulo-secao {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 22px;
+    -fx-font-weight: normal; /* "Clean" usa menos bold em títulos grandes */
+    -fx-padding: 0 0 15 0;
+}
+
+/* Fundo da barra de abas */
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: #252526;
+}
+
+.tab {
+    -fx-background-color: transparent;
+    -fx-text-fill: #969696;
+    -fx-pref-height: 35px;
+}
+
+.tab:selected {
+    -fx-background-color: #1e1e1e; /* Mesma cor do fundo para parecer integrado */
+    -fx-border-color: #007acc transparent transparent transparent; /* Linha azul no topo */
+    -fx-border-width: 2px;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+.tab .tab-label {
+    -fx-text-fill: #858585;
+}
